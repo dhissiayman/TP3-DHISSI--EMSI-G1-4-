@@ -13,8 +13,8 @@ public class GuideTouristiqueResource {
     @Inject
     LlmClientForGuideTouristique llm;
 
-    // GET /api/guide/lieu/France        (par défaut 2 endroits)
-    // GET /api/guide/lieu/Paris?nb=4    (bonus: nb paramétrable)
+    // GET /api/guide/lieu/France        (par défaut 10 endroits ici)
+    // GET /api/guide/lieu/Paris?nb=4
     @GET
     @Path("/lieu/{lieu}")
     public Response villeOuPays(@PathParam("lieu") String lieu,
